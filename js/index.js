@@ -25,9 +25,24 @@ $(document).ready(function() {
         $('#bg').removeClass('rotate')
       }
       if(nextIndex.index != 1){
+        setTimeout(function () {
+          $('.layer').css({
+            'display': 'block',
+            'transform': 'translate(-50%, -50%) rotateY(-90deg) scale(.5)',
+            'left': '10%'
+          })
+          $('.p2').css('transform', 'translate3d(-50%, -50%, -6000px) scale(.1)')
+        },1000)
         $('.p2').css('transform', 'translate3d(-50%, -50%, 6000px) scale(1)')
       }else{
-        $('.p2').css('transform', 'translate3d(-50%, -50%, 0) scale(1)')
+        $('.layer').css({
+          'transform': 'translate(-50%, -50%) rotateY(0) scale(2)',
+          'left': '50%'
+        })
+        setTimeout(function () {  
+          $('.layer').css('display', 'none')
+          $('.p2').css('transform', 'translate3d(-50%, -50%, 0) scale(1)')
+        },800)
       }
       if(nextIndex.index != 2){
         $('.text3 img').css('transform', 'translateX(-2000px)')
