@@ -113,7 +113,7 @@ body{
     -o-transform: translateX(-1500px) rotate(360deg);
 }
 }
-#fullpage{
+.fp-tableCell{
   perspective: 1000px;
 }
 .one .content{
@@ -121,11 +121,11 @@ body{
   position: absolute;
   left: 40%;
   top: 40%;
-  transform: translate(-45%, -45%) translateZ(600px);
-  -webkit-transform: translate(-45%, -45%) translateZ(600px);
-  -moz-transform: translate(-45%, -45%) translateZ(600px);
-  -ms-transform: translate(-45%, -45%) translateZ(600px);
-  -o-transform: translate(-45%, -45%) translateZ(600px);
+  transform: translate(-50%, -45%) translateZ(500px);
+  -webkit-transform: translate(-50%, -45%) translateZ(500px);
+  -moz-transform: translate(-50%, -45%) translateZ(500px);
+  -ms-transform: translate(-50%, -45%) translateZ(500px);
+  -o-transform: translate(-50%, -45%) translateZ(500px);
   transition: all 3s;
   -webkit-transition: all 1s;
   -moz-transition: all 3s;
@@ -184,7 +184,7 @@ body{
 }
 .comeIn .content{
   left: 50%;
-  top: 40%;
+  top: 45%;
   transform: translate(-50%, -50%)  translateZ(0);
   -webkit-transform: translate(-50%, -50%)  translateZ(0);
   -moz-transform: translate(-50%, -50%)  translateZ(0);
